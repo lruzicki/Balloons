@@ -1,0 +1,179 @@
+$black: #19191e;
+$gray: rgb(128,128,128);
+$red: rgb(163, 27, 27);
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+}
+
+// HEADER
+
+.header_main{
+    &__nav{
+        display: flex;
+        height: 3rem;
+        padding: 1rem 5rem;
+        border-bottom: 0.1rem solid rgba(182, 182, 182,0.75);
+
+        background:rgba(255, 255, 255, 0.75);
+        text-transform: uppercase;
+        &__logo{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            div{
+                font-size: 1rem;
+                margin-left: 1rem;
+                font-weight: bold;
+            }
+            img{
+                height: 100%;
+            }
+        }
+        &__menu{
+            flex: 1;
+
+            &--left{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                    li{
+                        text-align: end;
+                        flex: 1;
+                    }
+                    a{
+                        font-size: 1rem;
+                        text-decoration: none;
+                        font-weight: bold;                        
+                        color: $black;
+                    }
+                    a:hover{
+                        color: $gray;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// FOOTER
+
+.video-background {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 100vh;
+  z-index: -99;
+  overflow: hidden;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+.section-one{
+    background: #fff;
+    margin: 100vh 10% 0 10%;
+    display: flex;
+    width: 80%;
+    height: 60%;
+    justify-content: center;
+    &__photo{
+        position: relative;
+        width: 100%;
+        height: 25rem;
+        flex: 1;
+        &--main{
+            img{
+                position: absolute;
+                margin-left: -30%;
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .icon{
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                background: $red;
+                border-radius: 0.5rem;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            &--right{
+                left: 40%;
+                bottom: -2rem;
+                img{
+                    width: 50%;
+                    object-fit: scale-down;
+                    margin-left: 1rem;
+                    clip-path: none;
+                }
+            }
+            &--left{
+                left: -8%;
+                top: -2rem;
+                img{
+                    width: 50%;
+                    object-fit: scale-down;
+                    margin-left: 1rem;
+                    clip-path: none;
+                }
+            }
+        }
+        
+    }
+    &__text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &--title{
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        &--desc{
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.section-two{
+    margin-top: 10%;
+    
+}
+
+
+
+
+
+
+
+
+
+
