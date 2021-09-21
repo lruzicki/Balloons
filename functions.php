@@ -108,5 +108,5 @@ if( function_exists('acf_add_options_page') ) {
     ));
   }
 
-// NEW SITE FOR HEADER NAD FOOTER ACF
+// DATE MODIFY - X days ago for posts
 
