@@ -14,14 +14,14 @@ module.exports = merge(common,{
     },
     watch: true,
     plugins: [
-        new BrowserSyncPlugin({
-          // browse to http://localhost:3000/ during development,
-          // ./public directory is being served
-          files: ["**/*.php",
-          "./src/main.scss"],
-          proxy: "http://localhost/baloons", 
-        })
-      ],
+      new BrowserSyncPlugin({
+        // browse to http://localhost:3000/ during development,
+        // ./public directory is being served
+        files: ["**/*.php",
+        "./src/main.scss"],
+        proxy: "http://localhost/baloons", 
+      })
+    ],
     // // watchOptions: {
     // //     poll: true,
     // //     ignored: /node_modules/

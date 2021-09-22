@@ -23,9 +23,9 @@ body{
         display: flex;
         height: 3rem;
         padding: 1rem 5rem;
-        border-bottom: 0.1rem solid rgba(182, 182, 182,0.75);
+        // border-bottom: 0.1rem solid #b6b6b64d;
 
-        background:rgba(255, 255, 255, 0.75);
+        // background:rgba(255, 255, 255, 0.3);
         text-transform: uppercase;
         &__logo{
             display: flex;
@@ -100,8 +100,7 @@ body{
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;   
+        justify-content: flex-end;
         &--one{
             height: 50%;
             display: flex;
@@ -444,6 +443,86 @@ body{
         box-shadow: 0.3rem 0.3rem 0.8rem rgba(0,0,0,0.9);
     }
 }
+
+//contact
+
+.main{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .contact{
+        margin-top: 10%;
+        width:75%;
+        height:25rem;
+        background:#fff;
+        padding:1rem 1.5rem;
+        overflow:hidden;
+        border: solid 0.2rem $red-dark;
+        border-radius: 5rem 5rem 5rem 5rem;
+        border-color: transparent $red transparent $red-dark;
+        // box-shadow:0.3rem 0.6rem 0.3rem #ccc;
+        &__top{
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            .active{
+                color: $red-dark;
+            }
+            div{
+                width:calc(100% / 4);
+                text-align:center;
+                color:#888;
+                font-weight:600;
+                cursor: pointer;
+                font-size:14px;
+                text-transform:uppercase;
+                outline:none;
+            }
+        }
+        &__indicator{
+            position:relative;
+            width:25%;
+            height:0.25rem;
+            background:$red-dark;
+            left:0px;
+            border-radius:0.3rem;
+            transition:all 500ms ease-in-out;
+        }
+        &__body{
+            position:relative;
+            height:calc(100% - 60px);
+            padding:10px 5px;
+            div{
+                position:absolute;
+                top:-200%;
+                opacity:0;
+                transform:scale(0.9);
+                transition:opacity 500ms ease-in-out 0ms,
+                transform 500ms ease-in-out 0ms;
+            }
+            .active{
+                top:0px;
+                opacity:1;
+                transform:scale(1);
+            }
+        }
+    }
+}
+
+.form{
+    width: 75%;
+    margin-top: 5%;
+    padding:1rem 1.5rem;
+    border: solid 0.2rem $red-dark;
+        border-radius: 5rem 5rem 5rem 5rem;
+        border-color: transparent $red transparent $red-dark;
+    #wpcf7-f97-o1{
+        padding: 5% 10%;
+        border: 1px solid black;
+    }
+}
+
 
 
 
