@@ -144,47 +144,27 @@ echo $iframe;
         
         </div>
 <?php endwhile; wp_reset_query();  ?>
-
-
 </section>
 
-<section class="brudnopis">
-<div class="contact">
-  <div class="contact__top">
-    <div class="active">
-    &#9814; Company
+<section class="section-three">
+    <div class="section-three__top one">
+        <div class="section-three__top--photo">
+            <img loading="lazy" src="<?php the_field('section_3_image')?>" alt="#">
+        </div>
+        <div class="section-three__top__right">
+                <?php the_field('section_3_desc'); ?>
+        </div>
+        <div class="section-three__top--element"></div>
     </div>
-    <div>
-    &#x2657; Contact
+    <div class="section-three__bottom one">
+        <div class="section-three__bottom__left">
+                <?php the_field('section_3_desc_2'); ?>
+        </div>
+        <div class="section-three__bottom--element"></div>
+        <div class="section-three__bottom--photo">
+            <img loading="lazy" src="<?php the_field('section_3_image_2')?>" alt="#">
+        </div>
     </div>
-    <div>
-    &#x265F; Lorem
-    </div>
-    <div>
-    &#x2662; Ipsum
-    </div>
-  </div>
-  <div class="contact__indicator"></div>
-  <div class="contact__body">
-    <div class="active">
-      <h2>Typical info</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error neque saepe commodi blanditiis fugiat nisi aliquam ratione porro quibusdam in, eveniet accusantium cumque. Dolore officia reprehenderit perferendis quod libero omnis.</p>
-      <p>oooooooooooooo </p>
-    </div>
-    <div>
-      <h2>Contact us</h2>
-      <p>Form blah blah blah</p>
-    </div>
-    <div>
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
-    </div>
-    <div>
-      <h2>Lorem ipsum</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus exercitationem vero, id autem fugit assumenda a molestiae numquam at, quisquam cumque. Labore eligendi perspiciatis quia incidunt quaerat ut ducimus?</p>
-    </div>
-  </div>
-</div>
 </section>
 
 <?php get_footer(); ?>
