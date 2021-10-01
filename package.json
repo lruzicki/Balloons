@@ -23,6 +23,9 @@
     "webpack-cli": "^4.8.0",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jsdom": "^17.0.0"
+  },
   "description": ""
 }

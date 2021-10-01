@@ -100,10 +100,12 @@ echo $iframe;
             <div class="section-two__one--desc"><?php getField('post_wysiwyg')?>
             <?php the_content(); ?>
             </div>
+            <a href="<?php the_permalink($post->ID);?>" class="">
             <button class="section-two__one--button">
                 <p><i class="arrow right"></i><i class="arrow right"></i><i class="arrow right"></i></p>
             </button>
-            
+            </a>
+
             <div class="section-two__one__stats">
             <div class="section-two__one__stats--info">
                 <?php if( have_rows('post_height') ):
@@ -116,7 +118,6 @@ echo $iframe;
                 <div class="section-two__one__stats--info--type"><?php getSub('type')?></div>
                 <?php endwhile; endif ?>   
             </div>
-
             <div class="section-two__one__stats--info special">
                 <?php if( have_rows('post_duration') ):
                     while ( have_rows('post_duration') ) : the_row();
@@ -141,7 +142,6 @@ echo $iframe;
                 <?php endwhile; endif ?>   
             </div>
             </div>
-        
         </div>
 <?php endwhile; wp_reset_query();  ?>
 </section>

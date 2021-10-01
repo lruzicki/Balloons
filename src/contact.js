@@ -1,7 +1,7 @@
+
 let tabHeader = document.getElementsByClassName("contact__top")[0];
 let tabIndicator = document.getElementsByClassName("contact__indicator")[0];
-let tabBody = document.getElementsByClassName("contact__body")[0];
- 
+let tabBody = document.getElementsByClassName("contact__body")[0]; 
 let tabsPane = tabHeader.getElementsByTagName("div");
  
 for(let i=0;i<tabsPane.length;i++){

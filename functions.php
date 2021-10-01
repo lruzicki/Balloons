@@ -16,6 +16,7 @@ function strona_content() {
 function include_scripts()
 {
     wp_enqueue_script('mainjs', get_template_directory_uri() . '/dist/main.js', '', '1.0', true);
+    wp_enqueue_script('googleMap','//maps.googleapis.com/maps/api/js?key=AIzaSyAAWYDBsp9Aoot8wuRIaOdXRhi5bigiv9w', NULL, '1.0', true);
 }
 add_action('wp_footer', 'include_scripts');
 
@@ -110,3 +111,43 @@ if( function_exists('acf_add_options_page') ) {
 
 // DATE MODIFY - X days ago for posts
 
+// GOOGLE MAPS ACF + api key
+
+function balloons_post_type(){
+    //Flights Post type
+    register_post_type('flights', array(
+        'supports' => array('title','editor','excerpt'),
+        'rewrite' => array('slug' => 'flights'),
+        'has_archive' => true,
+        'public' => true,
+        'labels' => array(
+            'name' => 'Flights',
+            'add_new_item' => 'Add Flight',
+            'edit_item' => 'Edit Flight',
+            'all_items' => 'All flights',
+            'singular_name' => 'Flight' 
+        ),
+        'menu_icon' => 'dashicons-location-alt'
+    ));
+}
+
+add_action('init', 'balloons_post_type');
+
+//api key
+
+function balloonMapKey($api) {
+    $api['key']='AIzaSyAAWYDBsp9Aoot8wuRIaOdXRhi5bigiv9w';
+    return $api;
+}
+
+add_filter('acf/fields/google_map/api','balloonMapKey');
+
+// maps query, like daddy pig, it must be out
+
+// add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+ 
+// function add_my_post_types_to_query( $query ) {
+//     if ( is_home() && $query->is_main_query() )
+//         $query->set( 'post_type', array( 'post', 'flights' ) );
+//     return $query;
+// }
