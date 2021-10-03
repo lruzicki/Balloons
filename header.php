@@ -34,12 +34,10 @@
 
         </div>
         <!-- menu icon - mobile -->
-        <div class="menu_mobile">
-            <a href="#">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
 
         
