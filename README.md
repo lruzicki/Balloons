@@ -1,5 +1,5 @@
 # Balloons
-Web: WP, PHP, JS, Webpack, SASS
+Flower Balloons' website
 
 Website made with:
 - NodeJs
