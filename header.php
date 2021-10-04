@@ -34,7 +34,7 @@
 
         </div>
         <!-- menu icon - mobile -->
-        <div class="hamburger">
+        <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
