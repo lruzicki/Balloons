@@ -1,5 +1,5 @@
 # Balloons
-Flower Balloons - flights company
+Flower Balloons' website
 
 Website made with:
 - NodeJs
