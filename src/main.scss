@@ -542,6 +542,8 @@ body{
         width: 100%;
         height: 25rem;
         flex: 1;
+        opacity: 1;
+        transition: 500ms ease-out;
         &--main{
             img{
                 position: absolute;
@@ -588,7 +590,8 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        position: relative;
+        transition: 500ms ease-out;
         &--title{
             margin-bottom: 1rem;
             font-weight: bold;
@@ -984,6 +987,19 @@ body{
 }
 .bottom--content{
     padding: 10% 5%;
+}
+
+
+//for JS animations
+
+.left{
+    transform: translateX(-20%);
+    opacity: 0!important;
+}
+
+.right{
+    transform: translateX(20%);
+    opacity: 0!important;
 }
 
 
