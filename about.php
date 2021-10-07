@@ -3,7 +3,7 @@
 -->
 <?php get_header();?>
 
-<section class="main">
+<section class="main_contact">
   <div class="contact">
     <div class="contact__top">
       <div class="active">
