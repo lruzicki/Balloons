@@ -53,7 +53,7 @@ echo $iframe;
 
 <section class="section-one">
 
-    <div class="section-one__photo left">
+    <div class="section-one__photo">
         <div class="section-one__photo--main">
             <img loading="lazy" src="<?php getField('section_1_photo')?>" alt="Main guy - our pilot">
             <div class="section-one__photo--main--left icon">
@@ -65,7 +65,7 @@ echo $iframe;
         </div>
     </div>
 
-    <div class="section-one__text right">
+    <div class="section-one__text">
         <div class="section-one__text--title">
             <?php getField('section_1_title')?>
         </div>
