@@ -43,13 +43,13 @@ Fields display WYSIWYG Custom Field. Furthermore there is element that can inter
 
 ![image](https://user-images.githubusercontent.com/56487722/137879037-2255b862-91f6-48f0-be22-0da1b24c6d1f.png)
 
-** About page **
+**About page**
 
 It allows to switch displayed info without realoading the page.
 
 ![4](https://user-images.githubusercontent.com/56487722/137880248-bb94e835-37bd-49a2-b14e-20d6926d9cad.gif)
 
-** Flights map **
+**Flights map**
 
 Using API I've created custom map that displayed pins on the map that I've added with ACF. You can simply go to the WP admin panel, select Custom Post Type "Flights" and and them to the map. It was made without plugins.
 
@@ -57,15 +57,16 @@ Using API I've created custom map that displayed pins on the map that I've added
 
 ![6](https://user-images.githubusercontent.com/56487722/137881319-21347b1e-7165-4db3-a4e0-21771a948bc5.gif)
 
-** Form **
+**Form**
 
 Custom contact form.
 
 ![7](https://user-images.githubusercontent.com/56487722/137882115-659d5252-8b30-4ce5-ad3c-d025571d38cb.gif)
 
-** RWD **
-
-![8](https://user-images.githubusercontent.com/56487722/137882799-b19c6130-55d1-4b45-a264-4445c1f5cfac.gif)
-![9](https://user-images.githubusercontent.com/56487722/137882806-e263a31c-4edd-4caa-ae4b-eb3c57dae03b.gif)
+**RWD**
+<p align="center">
+<img src="https://user-images.githubusercontent.com/56487722/137882799-b19c6130-55d1-4b45-a264-4445c1f5cfac.gif" style="height: 400px;width:auto;">
+<img src="https://user-images.githubusercontent.com/56487722/137882806-e263a31c-4edd-4caa-ae4b-eb3c57dae03b.gif" style="height: 400px;width:auto;">
+</p>
 
 
