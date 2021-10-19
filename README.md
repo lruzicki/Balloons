@@ -16,8 +16,9 @@ Flower Balloons' website - custom Wordpress theme
 - CMS: Wordpress using ACF, Custom Post Types and Duplicator
 - API
 - RWD
+- Lighthouse: Best practise, SEO and Performance
 
-_My goal was no to use plugins (other than Duplicator, Contact Forms7 and ACF) and make my own template_
+_My goal was not to use plugins (other than Duplicator, Contact Forms7 and ACF) and make my own template_
 
 **About website components**
 
