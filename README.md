@@ -17,7 +17,7 @@ Flower Balloons' website - custom Wordpress theme
 - API
 - RWD
 
-_My goal was no to use plugins (other than Duplicator,Contact Forms7 and ACF) and make my own template_
+_My goal was no to use plugins (other than Duplicator, Contact Forms7 and ACF) and make my own template_
 
 **About website components**
 
@@ -51,7 +51,7 @@ It allows to switch displayed info without realoading the page.
 
 **Flights map**
 
-Using API I've created custom map that displayed pins on the map that I've added with ACF. You can simply go to the WP admin panel, select Custom Post Type "Flights" and and them to the map. It was made without plugins.
+Using API I've created custom map that displayed pins on the map that I've added with ACF. You can simply go to the WP admin panel, select Custom Post Type "Flights" and add them to the map. It was made only with ACF and Google API.
 
 ![5](https://user-images.githubusercontent.com/56487722/137880886-5adad241-cf68-45d2-9ece-d0055fdfbb16.gif)
 
