@@ -29,7 +29,7 @@ First of all we can see looped oembed background video. Source is located on YT 
 
 I've coded my own template for WP. Image and text are uploaded using ACF so it is very simple to change them in WP. Animations were made with The Intersection Observer API.
 
-![10](https://user-images.githubusercontent.com/56487722/137883510-d8ecb3b1-fbf3-4132-8e21-d7a2c16abf62.gif)
+![10](https://user-images.githubusercontent.com/56487722/137883761-0e753bad-c423-4424-b9ff-6bece64a0592.gif)
 
 **Section 2#**
 
